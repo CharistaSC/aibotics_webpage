@@ -323,3 +323,18 @@ canvas {
   color: #000;
   font-weight: 600;
 }
+
+.venue-image-wrapper {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.venue-image-wrapper img {
+  transition: transform 0.4s ease;
+}
+
+.venue-image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
