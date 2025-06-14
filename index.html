@@ -12,13 +12,6 @@
   <div class="gradient">
     <div id="navbar-container" class="fade-in-on-load" style="z-index: 10; position: relative;"></div>
   </div>
-  <script>
-    fetch("navbar.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("navbar-container").innerHTML = data;
-      });
-  </script>
 
   <!-- Hero Section -->
   <section class="header gradient position-relative overflow-hidden d-flex align-items-center" style="min-height: 91vh;">
@@ -31,7 +24,6 @@
       <p class="lead" style="font-size: clamp(1.2rem, 4vw, 2.5rem);">— from Learning Tech to Ageing Tech</p>
     </div>
   </section>
-
 
   <!-- Message Section -->
   <section id="message" class="py-5 gradient text-white">
@@ -150,88 +142,87 @@
     </div>
   </div>
 
-  <!-- s.WhoShouldAttend -->
+  <!-- Who Should Attend -->
   <section id="who-should-attend" class="py-5" style="min-height: 600px;">
     <div class="container">
-      <!-- Title -->
       <div class="text-center mb-4">
-        <h2 class="fw-bold" >Who Should Attend</h2>
+        <h2 class="fw-bold">Who Should Attend</h2>
         <p class="lead">This will be a unique gathering of experts from all over the world<br>sharing practical solutions and best practices</p>
       </div>
 
-      <!-- 3x3 Grid of Cards -->
-      <div class="row g-4 text-center">
+      <div class="row g-4 text-center justify-content-center">
         <!-- Card 1 -->
-        <div class="col-md-4 fade-in-up" style="transition-delay: 0.125s;">
-          <div id="homecard" class="card h-100 p-3 border-0">
-            <img src="assets/home/technologist.svg" alt="Puzzle Icon"class="mx-auto mb-2">
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
+            <img src="assets/home/technologist.svg" alt="Technologists" class="mx-auto mb-2">
             <h6>Technologists</h6>
           </div>
         </div>
 
         <!-- Card 2 -->
-        <div class="col-md-4 fade-in-up" style="transition-delay: 0.25s;">
-          <div id="homecard" class="card h-100 p-3 border-0">
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
             <img src="assets/home/investors.svg" alt="Idea Icon"class="mx-auto mb-2">
             <h6>Investors</h6>
           </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="col-md-4 fade-in-up" style="transition-delay: 0.375s;">
-          <div id="homecard" class="card h-100 p-3 border-0">
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
             <img src="assets/home/developers.svg" alt="Mesh Icon" class="mx-auto mb-2">
             <h6>Developers</h6>
           </div>
         </div>
 
         <!-- Card 4 -->
-        <div class="col-md-4 fade-in-up" style="transition-delay: 0.125s;">
-          <div id="homecard" class="card h-100 p-3 border-0">
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
             <img src="assets/home/product-managers.svg" alt="Human-Robot Icon" class="mx-auto mb-2">
             <h6>Product Managers</h6>
           </div>
         </div>
 
         <!-- Card 5 -->
-        <div class="col-md-4 fade-in-up" style="transition-delay: 0.25s;">
-          <div id="homecard" class="card h-100 p-3 border-0">
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
             <img src="assets/home/company-executives.svg" alt="Tools Icon" class="mx-auto mb-2">
             <h6>Company Executives</h6>
           </div>
         </div>
 
         <!-- Card 6 -->
-        <div class="col-md-4 fade-in-up" style="transition-delay: 0.375s;">
-          <div id="homecard" class="card h-100 p-3 border-0">
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
             <img src="assets/home/entrepreneurs.svg" alt="Tools Icon" class="mx-auto mb-2">
             <h6>Entrepreneurs</h6>
           </div>
         </div>
 
         <!-- Card 7 -->
-        <div class="col-md-4 fade-in-up" style="transition-delay: 0.125s;">
-          <div id="homecard" class="card h-100 p-3 border-0">
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
             <img src="assets/home/policy-makers.svg" alt="Tools Icon" class="mx-auto mb-2">
             <h6>Policy Makers</h6>
           </div>
         </div>
 
         <!-- Card 8 -->
-        <div class="col-md-4 fade-in-up" style="transition-delay: 0.25s;">
-          <div id="homecard" class="card h-100 p-3 border-0">
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
             <img src="assets/home/user-community.svg" alt="Tools Icon" class="mx-auto mb-2">
             <h6>User Community</h6>
           </div>
         </div>
 
         <!-- Card 9 -->
-        <div class="col-md-4 fade-in-up" style="transition-delay: 0.375s;">
-          <div id="homecard" class="card h-100 p-3 border-0">
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
             <img src="assets/home/government-regulators.svg" alt="Tools Icon" class="mx-auto mb-2">
             <h6>Government Regulators</h6>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -450,8 +441,6 @@
     </div>
   </section>
 
-  <!-- s.JoinUs-->>
-
   <!-- s.Organizers & Partners Graphic -->
   <section id="organizer-graphic" class="py-5 bg-white">
     <div class="container">
@@ -464,212 +453,10 @@
   <!-- Footer -->
   <div id="footer-container"></div>
 
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-container").innerHTML = data;
-      });
-  </script>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // NAVBAR LOAD + FADE IN
-      fetch("navbar.html")
-        .then(res => res.text())
-        .then(data => {
-          const navbar = document.getElementById("navbar-container");
-          navbar.innerHTML = data;
-          navbar.classList.add('visible');
-        });
-
-      // FOOTER LOAD
-      fetch("footer.html")
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById("footer-container").innerHTML = data;
-        });
-
-      // FADE-IN-ON-SCROLL
-      const faders = document.querySelectorAll('.fade-in-up');
-      const appearOnScroll = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            appearOnScroll.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
-
-      faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-      });
-
-      // FADE-IN ON LOAD
-      document.querySelectorAll('.fade-in-on-load').forEach(el => {
-        setTimeout(() => el.classList.add('visible'), 100);
-      });
-
-      // FILTERING LOGIC
-      const panelSection = document.getElementById('advisory-panel');
-      const filterButtons = document.querySelectorAll('.filter-btn');
-      const cards = document.querySelectorAll('.panel-card');
-
-      if (panelSection) {
-        // Maintain min-height
-        panelSection.style.minHeight = panelSection.offsetHeight + 'px';
-
-        // Show all cards by default
-        cards.forEach(card => card.classList.add('active'));
-
-        // Filter buttons logic
-        filterButtons.forEach(button => {
-          button.addEventListener('click', () => {
-            const filter = button.getAttribute('data-country');
-
-            cards.forEach(card => {
-              const cardCountry = card.getAttribute('data-country');
-              if (filter === 'all' || cardCountry === filter) {
-                card.classList.add('active');
-              } else {
-                card.classList.remove('active');
-              }
-            });
-
-            // Update the neuron background
-            const palette = flagColors[filter] || flagColors.DEFAULT;
-            const nodeCount = getNodeCountForScreen();
-            clearCanvas('neuronCanvas-2'); // optional cleanup
-            setupNeuronCanvas('neuronCanvas-2', Math.floor(nodeCount * 0.7), palette, 'rgba(220,220,220,0.3)');
-          });
-        });
-      }
-      
-      // NEURON PAINTING
-
-      // Reusable canvas at the top level
-      let activeCanvas = null;
-
-      // Destroy old canvas animation (if needed)
-      function clearCanvas(canvasId) {
-        const canvas = document.getElementById(canvasId);
-        if (canvas) {
-          const ctx = canvas.getContext('2d');
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-        }
-      }
-
-      function setupNeuronCanvas(canvasId, nodeCount, palette, lineColor = 'rgba(255,255,255,0.1)') {
-        const canvas = document.getElementById(canvasId);
-        const ctx = canvas.getContext('2d');
-        let width, height;
-
-        const nodes = [];
-
-        function resizeCanvas() {
-          width = canvas.width = canvas.offsetWidth;
-          height = canvas.height = canvas.offsetHeight;
-        }
-
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
-
-        for (let i = 0; i < nodeCount; i++) {
-          nodes.push({
-            x: Math.random() * width,
-            y: Math.random() * height,
-            dx: (Math.random() - 0.5) * 0.6,
-            dy: (Math.random() - 0.5) * 0.6,
-            baseRadius: 5 + Math.random() * 1.2,
-            pulseSpeed: 0.5 + Math.random() * 0.9,
-            color: palette[Math.floor(Math.random() * palette.length)]
-          });
-        }
-
-        function draw() {
-          ctx.clearRect(0, 0, width, height);
-
-          // Connect nodes
-          for (let i = 0; i < nodes.length; i++) {
-            for (let j = i + 1; j < nodes.length; j++) {
-              const dx = nodes[i].x - nodes[j].x;
-              const dy = nodes[i].y - nodes[j].y;
-              const dist = Math.sqrt(dx * dx + dy * dy);
-              if (dist < 150) {
-                ctx.beginPath();
-                ctx.strokeStyle = lineColor;
-                ctx.lineWidth = 2;
-                ctx.moveTo(nodes[i].x, nodes[i].y);
-                ctx.lineTo(nodes[j].x, nodes[j].y);
-                ctx.stroke();
-              }
-            }
-          }
-
-          // Draw nodes
-          nodes.forEach(node => {
-            const pulse = Math.sin(Date.now() * 0.002 * node.pulseSpeed) * 1.5;
-            const radius = node.baseRadius + pulse;
-
-            node.x += node.dx;
-            node.y += node.dy;
-
-            if (node.x <= 0 || node.x >= width) node.dx *= -1;
-            if (node.y <= 0 || node.y >= height) node.dy *= -1;
-
-            ctx.beginPath();
-            ctx.arc(node.x, node.y, radius, 0, Math.PI * 2);
-            ctx.fillStyle = node.color;
-            ctx.fill();
-          });
-
-          requestAnimationFrame(draw);
-        }
-
-        draw();
-      }
-
-      function getNodeCountForScreen() {
-        const width = window.innerWidth;
-
-        if (width >= 1200) return 300;         // Large screens
-        if (width >= 992) return 200;          // Medium screens
-        if (width >= 768) return 120;          // Tablets
-        if (width >= 576) return 60;           // Small phones
-        return 30;                             // Extra small (iPhone SE, etc)
-      }
-
-      // Country-to-color map (same as earlier)
-      const flagColors = {
-        SINGAPORE: ['rgba(255, 0, 0, 0.4)', 'rgba(200, 200, 200, 0.8)'],
-        FRANCE: ['rgba(0, 85, 164, 0.4)', 'rgba(200, 200, 200, 0.8)', 'rgba(239, 65, 53, 0.4)'],
-        USA: ['rgba(60, 59, 110, 0.4)', 'rgba(200, 200, 200, 0.8)', 'rgba(178, 34, 52, 0.4)'],
-        MALAYSIA: ['rgba(1, 0, 102, 0.4)', 'rgba(255, 204, 0, 0.4)', 'rgba(200, 200, 200, 0.8)', 'rgba(204, 0, 0, 0.4)'],
-        ISRAEL: ['rgba(0, 56, 184, 0.4)', 'rgba(200, 200, 200, 0.8)'],
-        SPAIN: ['rgba(170, 21, 27, 0.4)', 'rgba(241, 191, 0, 0.4)'],
-        FINLAND: ['rgba(0, 47, 108, 0.6)', 'rgba(200, 200, 200, 0.8)'],
-        TAIWAN: ['rgba(0, 0, 149, 0.4)', 'rgba(200, 200, 200, 0.8)', 'rgba(255, 0, 0, 0.4)'],
-        HONG_KONG: ['rgba(222, 41, 16, 0.4)', 'rgba(200, 200, 200, 0.8)'],
-        NEW_ZEALAND: ['rgba(0, 36, 125, 0.4)', 'rgba(200, 200, 200, 0.8)', 'rgba(204, 20, 43, 0.4)'],
-        KOREA: ['rgba(0, 52, 120, 0.4)', 'rgba(200, 200, 200, 0.8)', 'rgba(198, 12, 48, 0.4)', 'rgba(0, 0, 0, 0.3)'],
-        CHINA: ['rgba(222, 41, 16, 0.4)', 'rgba(255, 222, 0, 0.4)'],
-        AUSTRALIA: ['rgba(0, 0, 139, 0.4)', 'rgba(200, 200, 200, 0.8)', 'rgba(255, 0, 0, 0.4)'],
-        THAILAND: ['rgba(165, 25, 49, 0.4)', 'rgba(200, 200, 200, 0.8)', 'rgba(45, 42, 74, 0.4)'],
-        PHILIPPINES: ['rgba(0, 56, 168, 0.4)', 'rgba(200, 200, 200, 0.8)', 'rgba(255, 0, 0, 0.4)', 'rgba(255, 215, 0, 0.4)'],
-        INDONESIA: ['rgba(255, 0, 0, 0.4)', 'rgba(200, 200, 200, 0.8)'],
-        DEFAULT: ['rgba(200, 200, 200, 0.8)']
-      };
-
-      // Initialize both
-      const nodeCount = getNodeCountForScreen();
-      setupNeuronCanvas('neuronCanvas', nodeCount, flagColors.DEFAULT, 'rgba(255,255,255,0.1)');
-      setupNeuronCanvas('neuronCanvas-2', Math.floor(nodeCount * 0.7), flagColors.DEFAULT, 'rgba(220,220,220,0.3)');
-
-
-    });
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script/script.js"></script>
 
 </body>
 </html>
